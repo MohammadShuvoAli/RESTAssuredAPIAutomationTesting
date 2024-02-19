@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 public class HTTPRequests {
 	
+	// Get Request
 	@Test
 	void getUsers() {
 		
@@ -20,5 +21,5 @@ public class HTTPRequests {
 			.body("page", equalTo(2))
 			.log().all();
 	}
-
+	
 }
