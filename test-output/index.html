@@ -51,7 +51,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Shuvo\AppData\Local\Temp\testng-eclipse--1815368652\testng-customsuite.xml</span>
+                    <span>C:\Users\Shuvo\AppData\Local\Temp\testng-eclipse-1434065672\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">4 methods,   4 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -105,6 +105,11 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Default_suite" title="HTTPRequests.HTTPRequests" class="method navigator-link" hash-for-method="createUser">createUser</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Default_suite" title="HTTPRequests.HTTPRequests" class="method navigator-link" hash-for-method="deleteUser">deleteUser</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -144,6 +149,13 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="deleteUser">
+                  </a> <!-- deleteUser -->
+                  <span class="method-name">deleteUser</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="getUsers">
                   </a> <!-- getUsers -->
                   <span class="method-name">getUsers</span>
@@ -161,7 +173,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Shuvo\AppData\Local\Temp\testng-eclipse--1815368652\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Shuvo\AppData\Local\Temp\testng-eclipse-1434065672\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -210,24 +222,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(4);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'getUsers')
 data.setCell(0, 2, 'HTTPRequests.HTTPRequests')
-data.setCell(0, 3, 6514);
+data.setCell(0, 3, 5574);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'createUser')
 data.setCell(1, 2, 'HTTPRequests.HTTPRequests')
-data.setCell(1, 3, 2226);
+data.setCell(1, 3, 1297);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'updateUser')
+data.setCell(2, 1, 'deleteUser')
 data.setCell(2, 2, 'HTTPRequests.HTTPRequests')
-data.setCell(2, 3, 701);
+data.setCell(2, 3, 472);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'updateUser')
+data.setCell(3, 2, 'HTTPRequests.HTTPRequests')
+data.setCell(3, 3, 439);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -260,11 +276,15 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">createUser</span>
-                <span class="method-start">6526 ms</span>
+                <span class="method-start">5590 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">updateUser</span>
-                <span class="method-start">8758 ms</span>
+                <span class="method-start">6891 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser</span>
+                <span class="method-start">7334 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

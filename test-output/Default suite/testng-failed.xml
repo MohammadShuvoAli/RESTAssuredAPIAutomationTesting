@@ -5,8 +5,7 @@
     <classes>
       <class name="HTTPRequests.HTTPRequests">
         <methods>
-          <include name="createUser"/>
-          <include name="updateUser"/>
+          <include name="deleteUser"/>
         </methods>
       </class> <!-- HTTPRequests.HTTPRequests -->
     </classes>

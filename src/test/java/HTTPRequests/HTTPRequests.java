@@ -74,4 +74,20 @@ public class HTTPRequests {
 			
 		}
 
+		// DELETE Request		
+		
+			@Test(priority=4)
+			void deleteUser() {
+				
+				given()
+					
+				.when()
+			        .put("https://reqres.in/api/users/" + id)
+			        
+			    .then()
+			         .statusCode(200)  
+			         .log().all();
+				
+		}
+
 }
