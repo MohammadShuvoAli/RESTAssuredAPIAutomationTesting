@@ -10,8 +10,10 @@ import org.testng.annotations.Test;
 
 public class HTTPRequests {
 	
+	int id;
+	
 	// Get Request
-	@Test
+	@Test(priority=1)
 	void getUsers() {
 		
 		given()
@@ -27,7 +29,7 @@ public class HTTPRequests {
 	
 	// POST Request		
 			
-	@Test
+	@Test(priority=2)
 	void createUser() {
 		
 		HashMap data = new HashMap();
@@ -35,16 +37,41 @@ public class HTTPRequests {
 		data.put("job","SQA Engineer");
 		
 		
-		given()
+		id=given()
 			.contentType("application/json")
 			.body(data)
 			
 	    .when()
 	        .post("https://reqres.in/api/users")
+	        .jsonPath().getInt("id");
 	        
-	    .then()
-	        .statusCode(201)  
-	        .log().all();
+  	//  .then()
+	//        .statusCode(201)  
+	//        .log().all();
 	}
+
+	
+	// PUT Request		
+	
+		@Test(priority=3, dependsOnMethods={"createUser"})
+		void updateUser() {
+			
+			HashMap data = new HashMap();
+			data.put("name","shuvo");
+			data.put("job","Software QA Engineer");
+			
+			
+			given()
+				.contentType("application/json")
+				.body(data)
+				
+			.when()
+		        .put("https://reqres.in/api/users/" + id)
+		        
+		    .then()
+		         .statusCode(200)  
+		         .log().all();
+			
+		}
 
 }
