@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-20T21:59:10 BDT" name="Default suite" finished-at="2024-02-20T21:59:18 BDT" duration-ms="7871">
+  <suite started-at="2024-02-22T16:25:06 BDT" name="Default suite" finished-at="2024-02-22T16:25:12 BDT" duration-ms="6054">
     <groups>
     </groups>
-    <test started-at="2024-02-20T21:59:10 BDT" name="Default test" finished-at="2024-02-20T21:59:18 BDT" duration-ms="7871">
-      <class name="HTTPRequests.HTTPRequests">
-        <test-method signature="getUsers()[pri:1, instance:HTTPRequests.HTTPRequests@6e171cd7]" started-at="2024-02-20T21:59:10 BDT" name="getUsers" finished-at="2024-02-20T21:59:15 BDT" duration-ms="5574" status="PASS">
+    <test started-at="2024-02-22T16:25:06 BDT" name="Default test" finished-at="2024-02-22T16:25:12 BDT" duration-ms="6054">
+      <class name="WaysToCreatePostRequestBody.WaysToCreatePostRequestBody">
+        <test-method signature="testPostRequestUsingHashMap()[pri:1, instance:WaysToCreatePostRequestBody.WaysToCreatePostRequestBody@40ef3420]" started-at="2024-02-22T16:25:06 BDT" name="testPostRequestUsingHashMap" finished-at="2024-02-22T16:25:12 BDT" duration-ms="5932" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getUsers -->
-        <test-method signature="createUser()[pri:2, instance:HTTPRequests.HTTPRequests@6e171cd7]" started-at="2024-02-20T21:59:15 BDT" name="createUser" finished-at="2024-02-20T21:59:17 BDT" duration-ms="1297" status="PASS">
+        </test-method> <!-- testPostRequestUsingHashMap -->
+        <test-method signature="testDelete()[pri:2, instance:WaysToCreatePostRequestBody.WaysToCreatePostRequestBody@40ef3420]" started-at="2024-02-22T16:25:12 BDT" name="testDelete" finished-at="2024-02-22T16:25:12 BDT" duration-ms="42" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- createUser -->
-        <test-method signature="updateUser()[pri:3, instance:HTTPRequests.HTTPRequests@6e171cd7]" started-at="2024-02-20T21:59:17 BDT" name="updateUser" finished-at="2024-02-20T21:59:17 BDT" depends-on-methods="HTTPRequests.HTTPRequests.createUser" duration-ms="439" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- updateUser -->
-        <test-method signature="deleteUser()[pri:4, instance:HTTPRequests.HTTPRequests@6e171cd7]" started-at="2024-02-20T21:59:17 BDT" name="deleteUser" finished-at="2024-02-20T21:59:18 BDT" duration-ms="472" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- deleteUser -->
-      </class> <!-- HTTPRequests.HTTPRequests -->
+        </test-method> <!-- testDelete -->
+      </class> <!-- WaysToCreatePostRequestBody.WaysToCreatePostRequestBody -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
