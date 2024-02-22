@@ -5,7 +5,7 @@
     <classes>
       <class name="WaysToCreatePostRequestBody.WaysToCreatePostRequestBody">
         <methods>
-          <include name="testPostRequestUsingHashMap"/>
+          <include name="testPostRequestUsingJsonLibrary"/>
         </methods>
       </class> <!-- WaysToCreatePostRequestBody.WaysToCreatePostRequestBody -->
     </classes>
