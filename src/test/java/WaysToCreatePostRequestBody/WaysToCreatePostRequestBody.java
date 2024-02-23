@@ -2,9 +2,14 @@ package WaysToCreatePostRequestBody;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
 import java.util.HashMap;
 
 import org.json.JSONObject;
+import org.json.JSONTokener;
 import org.testng.annotations.Test;
 
 public class WaysToCreatePostRequestBody {
@@ -77,12 +82,11 @@ public class WaysToCreatePostRequestBody {
     }
 
     
-    @Test(priority = 1)
+    //@Test(priority = 1)
     void testPostRequestUsingPOJO() {
 
         PlainOldJavaObject data = new PlainOldJavaObject();
-        
-        
+                
         data.setName("Shuvo");
         data.setLocation("BD");
         data.setPhone("77777777777");
@@ -93,6 +97,44 @@ public class WaysToCreatePostRequestBody {
         id = given()
             .contentType("application/json")
             .body(data)
+            
+        .when()
+            .post("http://localhost:3000/students")
+            .jsonPath().getString("id");
+
+        given()
+            
+        .when()
+            .get("http://localhost:3000/students/" + id)
+            
+        .then()
+            .statusCode(200)
+            .body("name", equalTo("Shuvo"))
+            .body("location", equalTo("BD"))
+            .body("phone", equalTo("77777777777"))
+            .body("courses[0]", equalTo("C"))
+            .body("courses[1]", equalTo("C++"))
+            .log().all();
+    }
+
+    
+    @Test(priority = 1)
+    void testPostRequestUsingExternalJSONFile() {
+
+    	File f = new File("..//RESTAssuredAPIAutomationTesting/src/test/java/WaysToCreatePostRequestBody/data.json");
+    	FileReader fr = null;
+		try {
+			fr = new FileReader(f);
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		}
+    	JSONTokener jt = new JSONTokener(fr);
+    	JSONObject data = new JSONObject(jt);
+    	
+        
+        id = given()
+            .contentType("application/json")
+            .body(data.toString())
             
         .when()
             .post("http://localhost:3000/students")
