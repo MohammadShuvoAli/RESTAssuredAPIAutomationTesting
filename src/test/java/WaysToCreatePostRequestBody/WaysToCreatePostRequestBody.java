@@ -43,7 +43,7 @@ public class WaysToCreatePostRequestBody {
             .log().all();
     }
 
-    @Test(priority = 1)
+    //@Test(priority = 1)
     void testPostRequestUsingJsonLibrary() {
 
         JSONObject data = new JSONObject();
@@ -66,6 +66,43 @@ public class WaysToCreatePostRequestBody {
             
         .when()
             .get("http://localhost:3000/students/" + id)
+        .then()
+            .statusCode(200)
+            .body("name", equalTo("Shuvo"))
+            .body("location", equalTo("BD"))
+            .body("phone", equalTo("77777777777"))
+            .body("courses[0]", equalTo("C"))
+            .body("courses[1]", equalTo("C++"))
+            .log().all();
+    }
+
+    
+    @Test(priority = 1)
+    void testPostRequestUsingPOJO() {
+
+        PlainOldJavaObject data = new PlainOldJavaObject();
+        
+        
+        data.setName("Shuvo");
+        data.setLocation("BD");
+        data.setPhone("77777777777");
+
+        String courseArr[] = {"C", "C++"};
+        data.setCourses(courseArr);
+
+        id = given()
+            .contentType("application/json")
+            .body(data)
+            
+        .when()
+            .post("http://localhost:3000/students")
+            .jsonPath().getString("id");
+
+        given()
+            
+        .when()
+            .get("http://localhost:3000/students/" + id)
+            
         .then()
             .statusCode(200)
             .body("name", equalTo("Shuvo"))

@@ -5,7 +5,8 @@
     <classes>
       <class name="WaysToCreatePostRequestBody.WaysToCreatePostRequestBody">
         <methods>
-          <include name="testPostRequestUsingJsonLibrary"/>
+          <include name="testPostRequestUsingPOJO"/>
+          <include name="testDelete"/>
         </methods>
       </class> <!-- WaysToCreatePostRequestBody.WaysToCreatePostRequestBody -->
     </classes>
