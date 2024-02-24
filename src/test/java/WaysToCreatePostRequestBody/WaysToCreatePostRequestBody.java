@@ -116,7 +116,7 @@ public class WaysToCreatePostRequestBody {
             .body("courses[1]", equalTo("C++"))
             .log().all();
     }
-
+    
     
     @Test(priority = 1)
     void testPostRequestUsingExternalJSONFile() {
