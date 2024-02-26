@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-24T07:04:50 BDT" name="Default suite" finished-at="2024-02-24T07:04:54 BDT" duration-ms="4373">
+  <suite started-at="2024-02-26T21:56:16 BDT" name="Default suite" finished-at="2024-02-26T21:56:20 BDT" duration-ms="3641">
     <groups>
     </groups>
-    <test started-at="2024-02-24T07:04:50 BDT" name="Default test" finished-at="2024-02-24T07:04:54 BDT" duration-ms="4373">
-      <class name="PathAndQueryParameters.PathAndQueryParameters">
-        <test-method signature="testPathAndQueryParameters()[pri:0, instance:PathAndQueryParameters.PathAndQueryParameters@6e171cd7]" started-at="2024-02-24T07:04:50 BDT" name="testPathAndQueryParameters" finished-at="2024-02-24T07:04:54 BDT" duration-ms="4290" status="PASS">
+    <test started-at="2024-02-26T21:56:16 BDT" name="Default test" finished-at="2024-02-26T21:56:20 BDT" duration-ms="3641">
+      <class name="Cookies.Cookies">
+        <test-method signature="testCookie()[pri:0, instance:Cookies.Cookies@6e171cd7]" started-at="2024-02-26T21:56:16 BDT" name="testCookie" finished-at="2024-02-26T21:56:20 BDT" duration-ms="3562" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testPathAndQueryParameters -->
-      </class> <!-- PathAndQueryParameters.PathAndQueryParameters -->
+        </test-method> <!-- testCookie -->
+      </class> <!-- Cookies.Cookies -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
