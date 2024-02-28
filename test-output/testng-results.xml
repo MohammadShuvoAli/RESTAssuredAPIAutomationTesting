@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-02-26T22:18:33 BDT" name="Default suite" finished-at="2024-02-26T22:18:38 BDT" duration-ms="4149">
+  <suite started-at="2024-02-28T15:05:47 BDT" name="Default suite" finished-at="2024-02-28T15:05:51 BDT" duration-ms="4372">
     <groups>
     </groups>
-    <test started-at="2024-02-26T22:18:33 BDT" name="Default test" finished-at="2024-02-26T22:18:38 BDT" duration-ms="4149">
-      <class name="Cookies.Cookies">
-        <test-method signature="testCookie()[pri:1, instance:Cookies.Cookies@6e171cd7]" started-at="2024-02-26T22:18:33 BDT" name="testCookie" finished-at="2024-02-26T22:18:37 BDT" duration-ms="3802" status="PASS">
+    <test started-at="2024-02-28T15:05:47 BDT" name="Default test" finished-at="2024-02-28T15:05:51 BDT" duration-ms="4372">
+      <class name="Headers.Headers">
+        <test-method signature="testHeaders()[pri:1, instance:Headers.Headers@6e171cd7]" started-at="2024-02-28T15:05:47 BDT" name="testHeaders" finished-at="2024-02-28T15:05:51 BDT" duration-ms="4296" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testCookie -->
-        <test-method signature="getCookiesInfo()[pri:2, instance:Cookies.Cookies@6e171cd7]" started-at="2024-02-26T22:18:37 BDT" name="getCookiesInfo" finished-at="2024-02-26T22:18:38 BDT" duration-ms="281" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getCookiesInfo -->
-      </class> <!-- Cookies.Cookies -->
+        </test-method> <!-- testHeaders -->
+      </class> <!-- Headers.Headers -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
