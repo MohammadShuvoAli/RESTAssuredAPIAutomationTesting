@@ -1,2 +1,2 @@
-# RESTAssured API Automation Testing
+# REST Assured API Automation Testing
  
