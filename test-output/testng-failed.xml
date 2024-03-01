@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Cookies.Cookies">
+      <class name="Headers.Headers">
         <methods>
-          <include name="testCookie"/>
+          <include name="getHeaders"/>
         </methods>
-      </class> <!-- Cookies.Cookies -->
+      </class> <!-- Headers.Headers -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
