@@ -22,7 +22,8 @@ public class HeadersTest {
             .header("Server", "gws")
             .and()
             .statusCode(200)
-            .log().all();
+            //.log().headers() // only for headers 
+        	.log().all();
     }
 
     @Test(priority=2)
