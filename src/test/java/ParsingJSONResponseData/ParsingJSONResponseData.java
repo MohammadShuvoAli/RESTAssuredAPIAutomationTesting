@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.annotations.Test;
 
 public class ParsingJSONResponseData {
+  
 
 	@Test(priority=1)
 	void testJsonResponse() {
