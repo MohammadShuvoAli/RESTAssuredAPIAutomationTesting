@@ -5,7 +5,7 @@
     <classes>
       <class name="ParsingJSONResponseData.ParsingJSONResponseData">
         <methods>
-          <include name="testResponseBodyDataJsonObject"/>
+          <include name="testTitleAvailability"/>
         </methods>
       </class> <!-- ParsingJSONResponseData.ParsingJSONResponseData -->
     </classes>

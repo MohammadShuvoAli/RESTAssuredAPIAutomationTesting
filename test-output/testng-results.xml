@@ -1,28 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T05:30:20 BDT" name="Default suite" finished-at="2024-03-13T05:30:26 BDT" duration-ms="5764">
+  <suite started-at="2024-03-13T05:36:47 BDT" name="Default suite" finished-at="2024-03-13T05:36:53 BDT" duration-ms="5363">
     <groups>
     </groups>
-    <test started-at="2024-03-13T05:30:20 BDT" name="Default test" finished-at="2024-03-13T05:30:26 BDT" duration-ms="5764">
+    <test started-at="2024-03-13T05:36:47 BDT" name="Default test" finished-at="2024-03-13T05:36:53 BDT" duration-ms="5363">
       <class name="ParsingJSONResponseData.ParsingJSONResponseData">
-        <test-method signature="testJsonResponse()[pri:1, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:30:21 BDT" name="testJsonResponse" finished-at="2024-03-13T05:30:26 BDT" duration-ms="5383" status="PASS">
+        <test-method signature="testJsonResponse()[pri:1, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:47 BDT" name="testJsonResponse" finished-at="2024-03-13T05:36:52 BDT" duration-ms="5012" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJsonResponse -->
-        <test-method signature="testJsonResponseBodyData()[pri:2, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:30:26 BDT" name="testJsonResponseBodyData" finished-at="2024-03-13T05:30:26 BDT" duration-ms="138" status="PASS">
+        <test-method signature="testJsonResponseBodyData()[pri:2, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:52 BDT" name="testJsonResponseBodyData" finished-at="2024-03-13T05:36:52 BDT" duration-ms="107" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJsonResponseBodyData -->
-        <test-method signature="testResponseBodyDataJsonObject()[pri:3, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:30:26 BDT" name="testResponseBodyDataJsonObject" finished-at="2024-03-13T05:30:26 BDT" duration-ms="88" status="PASS">
+        <test-method signature="testResponseBodyDataJsonObject()[pri:3, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:52 BDT" name="testResponseBodyDataJsonObject" finished-at="2024-03-13T05:36:53 BDT" duration-ms="53" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testResponseBodyDataJsonObject -->
-        <test-method signature="testTitleAvailability()[pri:4, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:30:26 BDT" name="testTitleAvailability" finished-at="2024-03-13T05:30:26 BDT" duration-ms="40" status="PASS">
+        <test-method signature="testTitleAvailability()[pri:4, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:53 BDT" name="testTitleAvailability" finished-at="2024-03-13T05:36:53 BDT" duration-ms="44" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testTitleAvailability -->
+        <test-method signature="testTotalBookPrice()[pri:5, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:53 BDT" name="testTotalBookPrice" finished-at="2024-03-13T05:36:53 BDT" duration-ms="49" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testTotalBookPrice -->
       </class> <!-- ParsingJSONResponseData.ParsingJSONResponseData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

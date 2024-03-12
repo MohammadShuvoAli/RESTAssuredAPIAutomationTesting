@@ -100,4 +100,27 @@ public class ParsingJSONResponseData {
 	    assertTrue(isAvailable, "To Kill a Mockingbird is not available");
 	}
 	
+	@Test(priority=5)
+	void testTotalBookPrice() {
+	    Response res = given()
+	            .contentType("application/json")
+	        .when()
+	            .get("http://localhost:3000/store");
+
+	    String responseBody = res.getBody().asString(); // Get the response body as a string
+	    JSONObject jsonObject = new JSONObject(responseBody); // Create a JSONObject from the response body
+
+	    JSONArray booksArray = jsonObject.getJSONArray("book");
+	    int totalPrice = 0;
+	    for (int i = 0; i < booksArray.length(); i++) {
+	        JSONObject bookObject = booksArray.getJSONObject(i);
+	        int bookPrice = bookObject.getInt("price");
+	        totalPrice += bookPrice;
+	    }
+
+	    System.out.println("Total Price of all books: " + totalPrice);
+	    assertTrue(totalPrice > 0, "Total price should be greater than 0");
+	    System.out.println("-----------------------------");
+	}
+	
 }
