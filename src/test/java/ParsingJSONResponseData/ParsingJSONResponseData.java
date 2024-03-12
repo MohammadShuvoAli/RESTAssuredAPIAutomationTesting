@@ -27,7 +27,7 @@ public class ParsingJSONResponseData {
 	}
 	
 	@Test(priority=2)
-	void testJsonResponseAssert() {
+	void testJsonResponseBodyData() {
 		
 		Response res = given()
 				.contentType("ContentType.JSON")
