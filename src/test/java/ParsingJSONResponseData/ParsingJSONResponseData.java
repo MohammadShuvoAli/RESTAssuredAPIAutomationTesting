@@ -2,6 +2,7 @@ package ParsingJSONResponseData;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
+import static org.testng.Assert.assertTrue;
 
 import org.json.JSONArray;
 import org.json.JSONObject;
@@ -73,6 +74,30 @@ public class ParsingJSONResponseData {
 			
 		}
 		
+	}
+	
+	@Test(priority=4)
+	void testTitleAvailability() {
+	    Response res = given()
+	            .contentType("application/json")
+	        .when()
+	            .get("http://localhost:3000/store");
+
+	    String responseBody = res.getBody().asString(); // Get the response body as a string
+	    JSONObject jsonObject = new JSONObject(responseBody); // Create a JSONObject from the response body
+
+	    JSONArray booksArray = jsonObject.getJSONArray("book");
+	    boolean isAvailable = false;
+	    for (int i = 0; i < booksArray.length(); i++) {
+	        JSONObject bookObject = booksArray.getJSONObject(i);
+	        String bookTitle = bookObject.getString("title");
+	        if (bookTitle.equals("To Kill a Mockingbird")) {
+	            isAvailable = true;
+	            break; // Exit the loop early if the book is found
+	        }
+	    }
+
+	    assertTrue(isAvailable, "To Kill a Mockingbird is not available");
 	}
 	
 }
