@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-08T23:21:35 BDT" name="Default suite" finished-at="2024-03-08T23:21:46 BDT" duration-ms="10358">
+  <suite started-at="2024-03-12T19:19:48 BDT" name="Default suite" finished-at="2024-03-12T19:19:55 BDT" duration-ms="6896">
     <groups>
     </groups>
-    <test started-at="2024-03-08T23:21:35 BDT" name="Default test" finished-at="2024-03-08T23:21:46 BDT" duration-ms="10358">
-      <class name="Headers.HeadersTest">
-        <test-method signature="testHeaders()[pri:1, instance:Headers.HeadersTest@6e171cd7]" started-at="2024-03-08T23:21:35 BDT" name="testHeaders" finished-at="2024-03-08T23:21:43 BDT" duration-ms="8079" status="PASS">
+    <test started-at="2024-03-12T19:19:48 BDT" name="Default test" finished-at="2024-03-12T19:19:55 BDT" duration-ms="6896">
+      <class name="ParsingJSONResponseData.ParsingJSONResponseData">
+        <test-method signature="testJsonResponse()[pri:1, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-12T19:19:48 BDT" name="testJsonResponse" finished-at="2024-03-12T19:19:55 BDT" duration-ms="6811" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testHeaders -->
-        <test-method signature="getHeaders()[pri:2, instance:Headers.HeadersTest@6e171cd7]" started-at="2024-03-08T23:21:44 BDT" name="getHeaders" finished-at="2024-03-08T23:21:46 BDT" duration-ms="2190" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getHeaders -->
-      </class> <!-- Headers.HeadersTest -->
+        </test-method> <!-- testJsonResponse -->
+      </class> <!-- ParsingJSONResponseData.ParsingJSONResponseData -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

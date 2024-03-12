@@ -13,11 +13,15 @@ public class ParsingJSONResponseData {
 	void testJsonResponse() {
 		
 		given()
+		.contentType("ContentType.JSON")
 		
 		.when()
-		
+			.get("http://localhost:3000/store")
+			
 		.then()
-		;
+			.statusCode(200)
+			.header("Content-Type", "application/json")
+			.body("book[2].title", equalTo("To Kill a Mockingbird"));
 		
 	}
 	
