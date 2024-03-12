@@ -3,6 +3,8 @@ package ParsingJSONResponseData;
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.Matchers.*;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -40,6 +42,36 @@ public class ParsingJSONResponseData {
 		
 		String bookname = res.jsonPath().get("book[2].title").toString();
 		Assert.assertEquals(bookname, "To Kill a Mockingbird");
+		
+	}
+	
+	@Test(priority=3)
+	void testResponseBodyDataJsonObject() {
+		
+		Response res = given()
+				.contentType("ContentType.JSON")
+				
+			.when()
+				.get("http://localhost:3000/store");
+		
+		String responseBody = res.getBody().asString(); // Get the response body as a string
+	    JSONObject jsonObject = new JSONObject(responseBody); // Create a JSONObject from the response body
+
+	    JSONArray booksArray = jsonObject.getJSONArray("book");
+	    for (int i = 0; i < booksArray.length(); i++) {
+	    	JSONObject bookObject = booksArray.getJSONObject(i);
+	        String bookTitle = bookObject.getString("title");
+	        String bookAuthor = bookObject.getString("author");
+	        String bookCategory = bookObject.getString("category");
+	        int bookPrice = bookObject.getInt("price");
+
+	        System.out.println("Title: " + bookTitle);
+	        System.out.println("Author: " + bookAuthor);
+	        System.out.println("Category: " + bookCategory);
+	        System.out.println("Price: " + bookPrice);
+	        System.out.println("-----------------------------");
+			
+		}
 		
 	}
 	
