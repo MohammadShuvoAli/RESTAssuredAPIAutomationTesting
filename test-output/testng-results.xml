@@ -1,33 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-13T05:36:47 BDT" name="Default suite" finished-at="2024-03-13T05:36:53 BDT" duration-ms="5363">
+  <suite started-at="2024-03-13T18:01:43 BDT" name="Default suite" finished-at="2024-03-13T18:01:49 BDT" duration-ms="6131">
     <groups>
     </groups>
-    <test started-at="2024-03-13T05:36:47 BDT" name="Default test" finished-at="2024-03-13T05:36:53 BDT" duration-ms="5363">
-      <class name="ParsingJSONResponseData.ParsingJSONResponseData">
-        <test-method signature="testJsonResponse()[pri:1, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:47 BDT" name="testJsonResponse" finished-at="2024-03-13T05:36:52 BDT" duration-ms="5012" status="PASS">
+    <test started-at="2024-03-13T18:01:43 BDT" name="Default test" finished-at="2024-03-13T18:01:49 BDT" duration-ms="6131">
+      <class name="ParsingXMLResponse.ParsingXMLResponse">
+        <test-method signature="testXMLResponse()[pri:1, instance:ParsingXMLResponse.ParsingXMLResponse@6e171cd7]" started-at="2024-03-13T18:01:43 BDT" name="testXMLResponse" finished-at="2024-03-13T18:01:49 BDT" duration-ms="5539" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJsonResponse -->
-        <test-method signature="testJsonResponseBodyData()[pri:2, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:52 BDT" name="testJsonResponseBodyData" finished-at="2024-03-13T05:36:52 BDT" duration-ms="107" status="PASS">
+        </test-method> <!-- testXMLResponse -->
+        <test-method signature="testXMLResponseAssert()[pri:2, instance:ParsingXMLResponse.ParsingXMLResponse@6e171cd7]" started-at="2024-03-13T18:01:49 BDT" name="testXMLResponseAssert" finished-at="2024-03-13T18:01:49 BDT" duration-ms="490" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJsonResponseBodyData -->
-        <test-method signature="testResponseBodyDataJsonObject()[pri:3, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:52 BDT" name="testResponseBodyDataJsonObject" finished-at="2024-03-13T05:36:53 BDT" duration-ms="53" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResponseBodyDataJsonObject -->
-        <test-method signature="testTitleAvailability()[pri:4, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:53 BDT" name="testTitleAvailability" finished-at="2024-03-13T05:36:53 BDT" duration-ms="44" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitleAvailability -->
-        <test-method signature="testTotalBookPrice()[pri:5, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-13T05:36:53 BDT" name="testTotalBookPrice" finished-at="2024-03-13T05:36:53 BDT" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTotalBookPrice -->
-      </class> <!-- ParsingJSONResponseData.ParsingJSONResponseData -->
+        </test-method> <!-- testXMLResponseAssert -->
+      </class> <!-- ParsingXMLResponse.ParsingXMLResponse -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
