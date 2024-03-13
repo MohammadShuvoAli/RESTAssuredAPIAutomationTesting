@@ -36,6 +36,7 @@ public class ParsingXMLResponse {
 		.when()
 			.get("https://mocktarget.apigee.net/xml");
 		
+		Assert.assertEquals(res.statusCode(), 200);
 		Assert.assertEquals(res.header("Content-Type"), "application/xml; charset=utf-8");
 	}
 
