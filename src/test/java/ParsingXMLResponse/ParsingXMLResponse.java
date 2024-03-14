@@ -7,6 +7,7 @@ import static org.hamcrest.Matchers.*;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import io.restassured.path.xml.XmlPath;
 import io.restassured.response.Response;
 
 public class ParsingXMLResponse {
@@ -22,6 +23,7 @@ public class ParsingXMLResponse {
 		.then()
 			.statusCode(200)
 			.header("Content-Type", "application/xml; charset=utf-8")
+			.body("root.city", equalTo("San Jose"))	
 			.log().all();
 		
 	}
@@ -60,6 +62,22 @@ public class ParsingXMLResponse {
 		Assert.assertEquals(firstName, "John");
 		Assert.assertEquals(lastName, "Doe");
 		Assert.assertEquals(stateName, "CA");
+	}
+	
+	@Test(priority=3)
+	void testXMLResponseBody() {
+		
+		Response res = 
+		
+		given()
+		
+		.when()
+			.get("https://mocktarget.apigee.net/xml");
+		
+		XmlPath xmlobj = new XmlPath(res.asString());
+		
+		xmlobj.getList("root.city");
+		
 	}
 
 }
