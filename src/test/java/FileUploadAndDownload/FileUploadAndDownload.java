@@ -9,7 +9,7 @@ import org.testng.annotations.Test;
 
 public class FileUploadAndDownload {
 	
-	//@Test(priority=1)
+	@Test(priority=1)
 	void SingleFileUpload() {
 		// Define the file to upload
 		File myfile1 = new File(System.getProperty("user.dir") + "\\src\\test\\java\\FileUploadAndDownload\\myfile1.txt");
@@ -29,7 +29,7 @@ public class FileUploadAndDownload {
 		
 	}
 	
-	@Test(priority=1)
+	@Test(priority=2)
 	void MultipleFileUpload() {
 		// Define the file to upload
 		File myfile1 = new File(System.getProperty("user.dir") + "\\src\\test\\java\\FileUploadAndDownload\\myfile1.txt");
