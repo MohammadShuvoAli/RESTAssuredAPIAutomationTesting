@@ -52,4 +52,18 @@ public class FileUploadAndDownload {
 		
 	}
 	
+	@Test(priority=3)
+	void FileDownload() {
+		
+		given()
+		
+		.when()
+	    	.get("http://localhost:8080/downloadFile/myfile1.txt")
+		
+		.then()
+			.statusCode(200)
+			.log().all();
+		
+	}
+	
 }

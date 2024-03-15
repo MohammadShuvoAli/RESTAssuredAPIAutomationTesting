@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-15T23:25:27 BDT" name="Default suite" finished-at="2024-03-15T23:25:32 BDT" duration-ms="4950">
+  <suite started-at="2024-03-15T23:30:28 BDT" name="Default suite" finished-at="2024-03-15T23:30:37 BDT" duration-ms="9308">
     <groups>
     </groups>
-    <test started-at="2024-03-15T23:25:27 BDT" name="Default test" finished-at="2024-03-15T23:25:32 BDT" duration-ms="4950">
+    <test started-at="2024-03-15T23:30:28 BDT" name="Default test" finished-at="2024-03-15T23:30:37 BDT" duration-ms="9308">
       <class name="FileUploadAndDownload.FileUploadAndDownload">
-        <test-method signature="MultipleFileUpload()[pri:1, instance:FileUploadAndDownload.FileUploadAndDownload@6e171cd7]" started-at="2024-03-15T23:25:27 BDT" name="MultipleFileUpload" finished-at="2024-03-15T23:25:32 BDT" duration-ms="4831" status="FAIL">
+        <test-method signature="SingleFileUpload()[pri:1, instance:FileUploadAndDownload.FileUploadAndDownload@6e171cd7]" started-at="2024-03-15T23:30:28 BDT" name="SingleFileUpload" finished-at="2024-03-15T23:30:37 BDT" duration-ms="8611" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SingleFileUpload -->
+        <test-method signature="MultipleFileUpload()[pri:2, instance:FileUploadAndDownload.FileUploadAndDownload@6e171cd7]" started-at="2024-03-15T23:30:37 BDT" name="MultipleFileUpload" finished-at="2024-03-15T23:30:37 BDT" duration-ms="327" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[1 expectation failed.
@@ -39,14 +43,9 @@ at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
 at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
 at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
 at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:270)
 at io.restassured.specification.ResponseSpecification$body$1.callCurrent(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:212)
 at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:117)
 at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:244)
 at FileUploadAndDownload.FileUploadAndDownload.MultipleFileUpload(FileUploadAndDownload.java:49)
@@ -82,6 +81,10 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MultipleFileUpload -->
+        <test-method signature="FileDownload()[pri:3, instance:FileUploadAndDownload.FileUploadAndDownload@6e171cd7]" started-at="2024-03-15T23:30:37 BDT" name="FileDownload" finished-at="2024-03-15T23:30:37 BDT" duration-ms="207" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FileDownload -->
       </class> <!-- FileUploadAndDownload.FileUploadAndDownload -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
