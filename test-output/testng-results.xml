@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-16T21:49:06 BDT" name="Default suite" finished-at="2024-03-16T21:49:08 BDT" duration-ms="1288">
+  <suite started-at="2024-03-17T19:40:19 BDT" name="Default suite" finished-at="2024-03-17T19:40:21 BDT" duration-ms="1721">
     <groups>
     </groups>
-    <test started-at="2024-03-16T21:49:06 BDT" name="Default test" finished-at="2024-03-16T21:49:08 BDT" duration-ms="1288">
+    <test started-at="2024-03-17T19:40:19 BDT" name="Default test" finished-at="2024-03-17T19:40:21 BDT" duration-ms="1721">
       <class name="JsonSchemaValidation.JsonSchemaValidation">
-        <test-method signature="testJsonSchemaValidation()[pri:1, instance:JsonSchemaValidation.JsonSchemaValidation@f5ac9e4]" started-at="2024-03-16T21:49:06 BDT" name="testJsonSchemaValidation" finished-at="2024-03-16T21:49:08 BDT" duration-ms="1195" status="PASS">
+        <test-method signature="testJsonSchemaValidation()[pri:1, instance:JsonSchemaValidation.JsonSchemaValidation@6e171cd7]" started-at="2024-03-17T19:40:19 BDT" name="testJsonSchemaValidation" finished-at="2024-03-17T19:40:21 BDT" duration-ms="1617" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testJsonSchemaValidation -->
