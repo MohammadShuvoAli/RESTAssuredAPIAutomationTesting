@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="FileUploadAndDownload.FileUploadAndDownload">
+      <class name="JsonSchemaValidation.JsonSchemaValidation">
         <methods>
-          <include name="MultipleFileUpload"/>
+          <include name="testJsonSchemaValidation"/>
         </methods>
-      </class> <!-- FileUploadAndDownload.FileUploadAndDownload -->
+      </class> <!-- JsonSchemaValidation.JsonSchemaValidation -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

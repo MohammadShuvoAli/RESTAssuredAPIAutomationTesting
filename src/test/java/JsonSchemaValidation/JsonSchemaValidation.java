@@ -13,8 +13,11 @@ public class JsonSchemaValidation {
 		given()
 		
 		.when()
+			.get("http://localhost:3000/store")
 		
 		.then()
+			.statusCode(200)
+			.log().all()
 		
 		;
 		
