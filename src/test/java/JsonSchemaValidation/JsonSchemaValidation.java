@@ -1,11 +1,19 @@
 package JsonSchemaValidation;
 
-import static io.restassured.RestAssured.*;
-import static org.hamcrest.Matchers.*;
+import io.restassured.response.Response;
+import org.testng.annotations.Test;
+
+import static io.restassured.RestAssured.given;
+import static org.hamcrest.Matchers.not;
+import static org.hamcrest.Matchers.equalTo;
 
 import org.testng.annotations.Test;
 
+import io.restassured.module.jsv.JsonSchemaValidator;
+
 public class JsonSchemaValidation {
+	
+	String filePath = System.getProperty("user.dir") + "\\src\\test\\resources\\StoreAPISchema.json";
 	
 	@Test(priority=1)
 	void testJsonSchemaValidation() {
@@ -16,8 +24,7 @@ public class JsonSchemaValidation {
 			.get("http://localhost:3000/store")
 		
 		.then()
-			.statusCode(200)
-			.log().all()
+			.assertThat().body(JsonSchemaValidator.matchesJsonSchema(filePath)
 		
 		;
 		

@@ -1,33 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-18T16:32:48 BDT" name="Default suite" finished-at="2024-03-18T16:32:53 BDT" duration-ms="5100">
+  <suite started-at="2024-03-19T11:44:15 BDT" name="Default suite" finished-at="2024-03-19T11:44:19 BDT" duration-ms="4012">
     <groups>
     </groups>
-    <test started-at="2024-03-18T16:32:48 BDT" name="Default test" finished-at="2024-03-18T16:32:53 BDT" duration-ms="5100">
-      <class name="ParsingJSONResponseData.ParsingJSONResponseData">
-        <test-method signature="testJsonResponse()[pri:1, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-18T16:32:48 BDT" name="testJsonResponse" finished-at="2024-03-18T16:32:53 BDT" duration-ms="4752" status="PASS">
+    <test started-at="2024-03-19T11:44:15 BDT" name="Default test" finished-at="2024-03-19T11:44:19 BDT" duration-ms="4012">
+      <class name="JsonSchemaValidation.JsonSchemaValidation">
+        <test-method signature="testJsonSchemaValidation()[pri:1, instance:JsonSchemaValidation.JsonSchemaValidation@dbf57b3]" started-at="2024-03-19T11:44:15 BDT" name="testJsonSchemaValidation" finished-at="2024-03-19T11:44:19 BDT" duration-ms="3945" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["store"])
+    level: "error"
+    schema: {"loadingURI":"file:/C:/Users/Shuvo/OneDrive%20-%20American%20International%20University-Bangladesh/GitHub/RESTAssuredAPIAutomationTesting/target/test-classes/StoreAPISchema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["store"]
+    missing: ["store"]
+
+  Actual: {
+  "book": [
+    {
+      "author": "George Orwell",
+      "category": "Dystopian Fiction",
+      "price": 12.99,
+      "title": "1984"
+    },
+    {
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "price": 24.99,
+      "title": "Harry Potter and the Sorcerer's Stone"
+    },
+    {
+      "author": "Harper Lee",
+      "category": "Classics",
+      "price": 14.95,
+      "title": "To Kill a Mockingbird"
+    }
+  ]
+}
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Response body doesn't match expectation.
+Expected: The content to match the given JSON schema.
+error: object has missing required properties (["store"])
+    level: "error"
+    schema: {"loadingURI":"file:/C:/Users/Shuvo/OneDrive%20-%20American%20International%20University-Bangladesh/GitHub/RESTAssuredAPIAutomationTesting/target/test-classes/StoreAPISchema.json#","pointer":""}
+    instance: {"pointer":""}
+    domain: "validation"
+    keyword: "required"
+    required: ["store"]
+    missing: ["store"]
+
+  Actual: {
+  "book": [
+    {
+      "author": "George Orwell",
+      "category": "Dystopian Fiction",
+      "price": 12.99,
+      "title": "1984"
+    },
+    {
+      "author": "J.K. Rowling",
+      "category": "Fantasy",
+      "price": 24.99,
+      "title": "Harry Potter and the Sorcerer's Stone"
+    },
+    {
+      "author": "Harper Lee",
+      "category": "Classics",
+      "price": 14.95,
+      "title": "To Kill a Mockingbird"
+    }
+  ]
+}
+
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:107)
+at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:238)
+at JsonSchemaValidation.JsonSchemaValidation.testJsonSchemaValidation(JsonSchemaValidation.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testJsonResponse -->
-        <test-method signature="testJsonResponseBodyData()[pri:2, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-18T16:32:53 BDT" name="testJsonResponseBodyData" finished-at="2024-03-18T16:32:53 BDT" duration-ms="93" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testJsonResponseBodyData -->
-        <test-method signature="testResponseBodyDataJsonObject()[pri:3, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-18T16:32:53 BDT" name="testResponseBodyDataJsonObject" finished-at="2024-03-18T16:32:53 BDT" duration-ms="47" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testResponseBodyDataJsonObject -->
-        <test-method signature="testTitleAvailability()[pri:4, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-18T16:32:53 BDT" name="testTitleAvailability" finished-at="2024-03-18T16:32:53 BDT" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTitleAvailability -->
-        <test-method signature="testTotalBookPrice()[pri:5, instance:ParsingJSONResponseData.ParsingJSONResponseData@6e171cd7]" started-at="2024-03-18T16:32:53 BDT" name="testTotalBookPrice" finished-at="2024-03-18T16:32:53 BDT" duration-ms="57" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testTotalBookPrice -->
-      </class> <!-- ParsingJSONResponseData.ParsingJSONResponseData -->
+        </test-method> <!-- testJsonSchemaValidation -->
+      </class> <!-- JsonSchemaValidation.JsonSchemaValidation -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
