@@ -11,10 +11,15 @@ public class JsonSchemaValidation {
     @Test(priority=1)
     void testJsonSchemaValidation() {
         System.out.println("File path: " + filePath); // Print the file path
+        
         given()
+        
         .when()
+        
             .get("http://localhost:3000/store")
+            
         .then()
+        
             .assertThat().body(JsonSchemaValidator.matchesJsonSchemaInClasspath(filePath));
     }
 }
